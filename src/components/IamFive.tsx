@@ -8,7 +8,7 @@ import { toast } from "sonner";
 import Explanation from "./Explaination";
 import { fetchExplanation } from "@/lib/groqFetch";
 
-const Index = () => {
+const IamFive = () => {
   const [topic, setTopic] = useState("");
   const [explanation, setExplanation] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -108,4 +108,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default IamFive;

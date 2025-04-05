@@ -1,6 +1,4 @@
-import React from "react";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, FileText, Brain } from "lucide-react";
+import { Sparkles, FileText, Brain } from "lucide-react";
 import { Card } from "./ui/card";
 
 const Hero = () => {

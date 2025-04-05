@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { BrainCircuit, BookOpen, MessageCircle } from "lucide-react";
 
@@ -17,10 +16,10 @@ const NavBar = () => {
           <a href="#features" className="text-gray-600  hover:text-[#f72585]">
             Features
           </a>
-          <a href="#chat" className="text-gray-600 hover:text-[#f72585] ">
+          <a href="/chat" className="text-gray-600 hover:text-[#f72585] ">
             AI Chat
           </a>
-          <a href="#summarizer" className="text-gray-600 hover:text-[#f72585]">
+          <a href="/iamfive" className="text-gray-600 hover:text-[#f72585]">
             Explain like I am five
           </a>
         </div>

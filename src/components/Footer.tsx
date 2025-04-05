@@ -1,12 +1,4 @@
-import React from "react";
-import {
-  BrainCircuit,
-  MessageCircle,
-  FileText,
-  Github,
-  Twitter,
-  Linkedin,
-} from "lucide-react";
+import { BrainCircuit, Github, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -53,7 +45,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#chat"
+                  href="/chat"
                   className="text-gray-600 hover:text-tutor-purple transition-colors"
                 >
                   AI Chat Assistant
@@ -61,7 +53,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#summarizer"
+                  href="/iamfive"
                   className="text-gray-600 hover:text-tutor-purple transition-colors"
                 >
                   Explain like I am five
