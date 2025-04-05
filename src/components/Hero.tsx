@@ -31,26 +31,16 @@ const Hero = () => {
             className="text-lg text-gray-600 max-w-3xl mb-8 animate-fade-in"
             style={{ animationDelay: "0.6s" }}
           >
-            Experience personalized learning with our AI tutor that answers your
-            questions instantly and summarizes complex PDFs to help you
+            Experience personalized learning with our AI{" "}
+            <span className=" text-[#f72585]">tutor</span> that answers your
+            questions instantly and explains complex complex topics to help you
             understand any topic with ease.
           </p>
 
           <div
             className="flex flex-col sm:flex-row gap-4 "
             style={{ animationDelay: "0.8s" }}
-          >
-            <Button size="lg" className="bg-[#f72585] text-white">
-              <a href="#chat" className="flex items-center ">
-                Chat with AI <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-            <Button size="lg" variant="outline">
-              <a href="#summarizer" className="flex items-center">
-                Summarize PDF <FileText className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-          </div>
+          ></div>
         </div>
 
         <div
@@ -75,11 +65,10 @@ const Hero = () => {
               <FileText color="red" className="h-6 w-6 text-tutor-blue" />
             </div>
             <h3 className="text-xl font-semibold mb-2">
-              Smart Document Analysis
+              Explain like I am five
             </h3>
             <p className="text-gray-600">
-              Upload any PDF and get concise summaries, key points, and insights
-              instantly.
+              Explains complex concepts in a way that's easy to understand.
             </p>
           </Card>
 

@@ -112,9 +112,9 @@ const ChatBot = () => {
     <div className="min-h-screen py-12 px-4">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 bg-tutor-purple/10 text-tutor-purple">
-            <Sparkles className="h-4 w-4 mr-2" />
-            <span>AI Academic Assistant</span>
+          <div className="inline-flex items-center  bg-gradient-to-r from-[#f72585] to-purple-500 px-3 py-1 rounded-full text-sm font-medium mb-4 bg-tutor-purple/10 text-tutor-purple">
+            <Sparkles color="white" className="h-4 w-4 mr-2" />
+            <span className="text-white">AI Academic Assistant</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ask Me <span className="text-tutor-purple">Anything</span>
@@ -125,13 +125,13 @@ const ChatBot = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Card className="overflow-hidden shadow-lg border-none">
+        <div className="max-w-4xl mx-auto ">
+          <Card className="overflow-hidden border border-zinc-200 shadow-lg border-none">
             <CardContent className="p-0">
               <div className="p-4 border-b bg-gradient-to-r from-tutor-purple to-tutor-blue text-white">
-                <h3 className="font-medium flex items-center">
-                  <Bot className="h-5 w-5 mr-2" />
-                  AuraTutor Chat
+                <h3 className="font-medium text-purple-500 flex items-center">
+                  <Bot color="purple" className="h-5  w-5 mr-2" />
+                  Ai <span className="text-[#f72585]">Tutor</span> Chat
                 </h3>
               </div>
 
@@ -165,16 +165,22 @@ const ChatBot = () => {
                           )}
                         >
                           {message.sender === "user" ? (
-                            <User className="h-5 w-5 text-tutor-purple" />
+                            <User
+                              color="red"
+                              className="h-5 w-5 text-tutor-purple"
+                            />
                           ) : (
-                            <Bot className="h-5 w-5 text-tutor-blue" />
+                            <Bot
+                              color="blue"
+                              className="h-5 w-5 text-tutor-blue"
+                            />
                           )}
                         </div>
                         <div
                           className={cn(
                             "p-4 rounded-2xl",
                             message.sender === "user"
-                              ? "bg-tutor-purple text-white"
+                              ? "bg-purple-400 text-white"
                               : "bg-white text-gray-800 border border-gray-100 shadow-sm"
                           )}
                         >
@@ -235,7 +241,7 @@ const ChatBot = () => {
                     type="submit"
                     onClick={handleSendMessage}
                     disabled={isLoading || inputValue.trim() === ""}
-                    className="bg-gradient-to-r from-tutor-purple to-tutor-light-purple hover:opacity-90 text-white"
+                    className="bg-purple-500 from-tutor-purple to-tutor-light-purple hover:opacity-90 text-white"
                   >
                     {isLoading ? (
                       <Loader2 className="h-4 w-4 animate-spin" />

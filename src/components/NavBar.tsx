@@ -21,7 +21,7 @@ const NavBar = () => {
             AI Chat
           </a>
           <a href="#summarizer" className="text-gray-600 hover:text-[#f72585]">
-            PDF Summarizer
+            Explain like I am five
           </a>
         </div>
 

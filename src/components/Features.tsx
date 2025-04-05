@@ -13,8 +13,9 @@ const Features = () => {
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            AuraTutor combines cutting-edge AI with intuitive design to create
-            the perfect learning companion.
+            Ai <span className="text-[#f72585]">Tutor</span> combines
+            cutting-edge AI with intuitive design to create the perfect learning
+            companion.
           </p>
         </div>
 
@@ -72,21 +73,19 @@ const Features = () => {
               <Clock color="purple" className="h-6 w-6 " />
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-3">
-                Time-Saving Summaries
-              </h3>
+              <h3 className="text-xl font-semibold mb-3">Easy to Understand</h3>
               <p className="text-gray-600 mb-4">
-                Our PDF summarizer extracts the most important information from
-                documents, saving you hours of reading time.
+                Explain like five is here to help you understand complex topics
+                in a way that's easy to digest.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <Check className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Extract key concepts and ideas</span>
+                  <span> Clear and concise explanations</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="h-5 w-5 text-green-500 mr-2" />
-                  <span>Focus on what matters most</span>
+                  <span> Easy to follow and understand</span>
                 </li>
               </ul>
             </div>
